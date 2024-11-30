@@ -1,0 +1,142 @@
+/* Color Variables */
+:root {
+  --dark-bg: #041421;
+  --primary-bg: #042630;
+  --secondary-bg: #4c7273;
+  --accent: #86b9b0;
+  --text-color: #d0d6d6;
+}
+
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.resume-container {
+  width: 100%;
+  max-width: 800px;
+  background-color: var(--primary-bg);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  background-color: var(--secondary-bg);
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.header h1 {
+  color: var(--accent);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.header .subheading {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.header p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Content Sections in a Single Column */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  color: var(--accent);
+  font-size: 1.3rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.skills-list li {
+  background-color: var(--secondary-bg);
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  margin: 5px;
+}
+
+/* Education & Experience Styling */
+.education-item,
+.experience-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: var(--secondary-bg);
+  border-radius: 5px;
+}
+
+.education-item h3,
+.experience-item h3 {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin-bottom: 5px;
+}
+
+.education-item p,
+.experience-item p {
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.8rem;
+  }
+
+  .header .subheading {
+    font-size: 1.1rem;
+  }
+
+  .section h2 {
+    font-size: 1.2rem;
+  }
+}
