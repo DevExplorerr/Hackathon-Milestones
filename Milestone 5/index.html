@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="builder-container">
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Fill Out Your Resume Informations</h2>
+            <form id="resume-form">
+                <h3>Personal Information</h3>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Enter your professional title (e.g., Software Developer)"
+                    required>
+                <label for="summary">Professional Summary</label>
+                <textarea id="summary" placeholder="Write a brief professional summary" rows="5" required></textarea>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="Enter your location" required>
+
+                <h3>Education</h3>
+                <div id="education-section">
+                    <div class="education-item">
+                        <label for="education-title-1">Education Title</label>
+                        <input type="text" id="education-title-1" placeholder="Instituition" required>
+                        <label for="education-description-1">Education Description</label>
+                        <textarea id="education-description-1" placeholder="Details or description of the education"
+                            rows="5"></textarea>
+                    </div>
+                </div>
+
+                <h3>Work Experience</h3>
+                <div id="experience-section">
+                    <div class="experience-item">
+                        <label for="experience-title-1">Job Title</label>
+                        <input type="text" id="experience-title-1" placeholder="Company Name" required>
+                        <label for="experience-description-1">Job Description</label>
+                        <textarea id="experience-description-1" placeholder="Details or description of the job"
+                            rows="5"></textarea>
+                    </div>
+                </div>
+
+                <h3>Skills</h3>
+                <input type="text" id="skills" placeholder="Enter skills separated by commas">
+
+                <button type="submit">Generate/Edit Resume</button>
+            </form>
+        </div>
+
+        <!-- Resume Preview Section -->
+        <section class="resume-preview">
+            <div id="resume-output">
+                <h2>Your Resume Will Appear Here</h2>
+            </div>
+            <div class="download">
+                <button type="submit">Download as PDF</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

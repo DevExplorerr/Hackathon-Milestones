@@ -1,0 +1,253 @@
+/* Variables */
+:root {
+  --dark-bg: #041421;
+  --primary-bg: #042630;
+  --secondary-bg: #4c7273;
+  --accent: #86b9b0;
+  --text-color: #d0d6d6;
+}
+
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--dark-bg);
+  color: var(--text-color);
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Builder Container */
+.builder-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+/* Form Section */
+.form-section {
+  background-color: var(--primary-bg);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+#name {
+  color: var(--text-color);
+}
+
+.form-section h2 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: var(--secondary-bg);
+  color: var(--text-color);
+}
+
+input::placeholder, textarea::placeholder {
+  color: black;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: var(--dark-bg);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--secondary-bg);
+}
+
+/* Resume Preview Section */
+.resume-preview {
+  background-color: var(--primary-bg);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 2;
+}
+
+#resume-output {
+  background-color: var(--primary-bg);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .builder-container {
+    flex-direction: column;
+  }
+}
+
+/* generated resume style */
+
+.header {
+  background-color: var(--secondary-bg, #2d2d2d);
+  padding: 25px;
+  text-align: center;
+  /* margin-bottom: 30px; */
+  border-radius: 8px;
+}
+
+.header h1 {
+  color: var(--accent, #00bcd4);
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header .subheading {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: var(--text-color, #f5f5f5);
+}
+
+.header p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color, #f5f5f5);
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Section Styling */
+
+
+.section h2 {
+  color: var(--accent, #00bcd4);
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--accent, #00bcd4);
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Lists */
+ul {
+  list-style-type: none;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: var(--text-color, #333);
+}
+
+/* Links */
+a {
+  color: var(--accent, #00bcd4);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+/* Skills List */
+.skills-list li {
+  background-color: var(--secondary-bg, #2d2d2d);
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  margin: 5px;
+  color: #fff;
+}
+
+/* Education & Experience Styling */
+.education-item,
+.experience-item {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: var(--secondary-bg, #2d2d2d);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3,
+.experience-item h3 {
+  font-size: 1.2rem;
+  color: var(--accent, #00bcd4);
+  margin-bottom: 5px;
+  margin-top: -2px;
+}
+
+.education-item p,
+.experience-item p {
+  font-size: 1rem;
+  color: var(--text-color, #f5f5f5);
+  line-height: 1.6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .builder-container {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .header .subheading {
+    font-size: 1.2rem;
+  }
+
+  .section h2 {
+    font-size: 1.3rem;
+  }
+
+  .skills-list li {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+}
+
+/* Additional Custom Styles */
+button {
+  background-color: var(--accent, #00bcd4);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--hover-color, #007a92);
+}
+
+button:focus {
+  outline: none;
+}
